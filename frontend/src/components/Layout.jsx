@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone, MapPin, Instagram, Mail } from "lucide-react";
+import logoImg from "../../public/logo.jpg";
 
 const NAV_ITEMS = [
   { to: "/", label: "Home", testid: "nav-home" },
@@ -15,7 +16,7 @@ function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
   <img 
-    src="/logo.jpg" 
+    src={logoImg}
     alt="Red Coral Beauty Center" 
     className="h-10 w-auto object-contain rounded" 
   />
