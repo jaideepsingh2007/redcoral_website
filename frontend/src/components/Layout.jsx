@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone, MapPin, Instagram, Mail } from "lucide-react";
-import logoImg from "../../public/logo.jpg";
+import logoImg from "../assets/logo.jpg";
 
 const NAV_ITEMS = [
   { to: "/", label: "Home", testid: "nav-home" },
