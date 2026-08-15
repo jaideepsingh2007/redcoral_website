@@ -14,17 +14,17 @@ const NAV_ITEMS = [
 function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
-      <span
-        className="text-coral font-serif italic text-3xl leading-none tracking-tight"
-        style={{ fontWeight: 600 }}
-      >
-        Red Coral
-      </span>
-      <span className="hidden md:flex flex-col text-[10px] uppercase tracking-[0.28em] text-espressoSoft border-l border-gold/50 pl-3">
-        <span>Ladies</span>
-        <span>Beauty Center</span>
-      </span>
-    </Link>
+  <img 
+    src="/logo.jpg" 
+    alt="Red Coral Beauty Center" 
+    className="h-10 w-auto object-contain rounded" 
+  />
+  <span className="hidden md:flex flex-col text-[10px] uppercase tracking-[0.28em] text-espressoSoft border-l border-espressoSoft/30 pl-3">
+    <span>Ladies</span>
+    <span>Beauty Center</span>
+  </span>
+</Link>
+
   );
 }
 
